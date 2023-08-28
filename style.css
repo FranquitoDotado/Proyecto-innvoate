@@ -175,7 +175,7 @@ header {
     height: auto;
 }
 
-.menu-button {
+.menu-button, .dsk-menu-button {
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -193,12 +193,39 @@ header {
 
 .div-hidden {
     display: none;
-}
+} 
 
 /* Menu detail */
 
-.menu-detail {
+.container-detail-menu {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 65px;
+    width: 100%;
+    height: 61%;
+}
 
+.menu-detail {
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    max-width: 365px;
+    max-height: 410px;
+} 
+
+.menu-detail div{
+    display: flex;
+    justify-content: space-between;
+} 
+
+.menu-detail div p{
+    margin-top: 7px;
+} 
+
+.close-detail-button {
+    font-size: 30px;
 }
 
 /* Footer */
